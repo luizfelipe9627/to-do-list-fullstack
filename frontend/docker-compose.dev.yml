@@ -1,0 +1,26 @@
+# O services é um array de serviços que serão executados nos containers do docker.
+services:
+  # O serviço web(pode ser qualquer outro nome) é um serviço que será executado no container do nginx.
+  web:
+    # Define o nome da imagem que será utilizada para criar o container.
+    image: web
+    # A imagem que será utilizada para criar o container, no caso está na raiz do projeto.
+    build:
+      # Define o contexto da imagem, no caso a raiz do projeto.
+      context: .
+      # Define o arquivo dockerfile que será utilizado para criar a imagem.
+      dockerfile: Dockerfile.dev
+    # Define as portas que serão expostas para a máquina host.
+    ports:
+      # Mapeia a porta 3000 do container para a porta 3000 da máquina host.
+      - 3000:3000
+    # Define o volume, responsável por mapear a pasta do projeto para o container.
+    volumes:
+      # Acessa a pasta raiz do projeto e mapeia para a pasta /usr/app do container.
+      - .:/usr/app
+      # Acessa a pasta node_modules do projeto e mapeia para a pasta /usr/app/node_modules do container.
+      - /usr/app/node_modules
+    # Define o ambiente de desenvolvimento.
+    environment: 
+      # O chokidar é uma ferramenta que monitora as alterações nos arquivos e atualiza o navegador automaticamente.
+      - CHOKIDAR_USEPOLLING=true

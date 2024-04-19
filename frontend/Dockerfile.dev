@@ -1,0 +1,20 @@
+# Define que a imagem base será a node 18-alpine.
+FROM node:18-alpine
+
+# Define que o diretório de trabalho será /usr/app.
+WORKDIR /usr/app
+
+# Copia o arquivo package.json e package-lock.json para o diretório /usr/app.
+COPY package*.json ./
+
+# Instala as dependências do projeto no diretório /usr/app quando a imagem for criada.
+RUN npm install
+
+# Copia todos os arquivos do projeto para o diretório /usr/app.
+COPY . .
+
+# Expõe a porta 3000, que é a porta que o servidor do projeto está rodando.
+EXPOSE 3000
+
+# Define o comando que será executado quando a imagem for iniciada, fazendo a aplicação rodar em modo de desenvolvimento.
+CMD ["npm", "run", "dev"]
