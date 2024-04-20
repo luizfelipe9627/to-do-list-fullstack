@@ -2,7 +2,9 @@ const connection = require("./connection"); // Importa a conexão com o banco de
 
 // Criado uma função assincrona chamada getTask responsável por buscar todas as tarefas presentes no banco de dados. O async é utilizado para que a função possa utilizar o await.
 const getTask = async () => {
-  const tasks = await connection.execute("SELECT * FROM tasks"); // Chama o método execute da conexão com o banco de dados, passando a query que busca todas as tarefas. O await tem que ser utilizado para que a função espere a execução da query e só depois retorne o resultado.
+  const query = "SELECT * FROM tasks ORDER BY status DESC"; // Modifica a query para buscar todas as tarefas ordenadas pelo status em ordem decrescente (pendente primeiro, concluído por último).
+
+  const tasks = await connection.execute(query); // Chama o método execute da conexão com o banco de dados, passando a query que busca todas as tarefas. O await tem que ser utilizado para que a função espere a execução da query e só depois retorne o resultado.
 
   return tasks[0]; // Retorna o resultado da query, que é um array de objetos que vai conter duas arrays, uma com os dados das tarefas e outra com informações sobre a query, por isso estamos retornando somente a primeira posição do array, que é a array de tarefas.
 };

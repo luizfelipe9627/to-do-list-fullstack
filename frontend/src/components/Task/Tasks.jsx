@@ -77,7 +77,7 @@ const Tasks = () => {
   const postTask = (event) => {
     event.preventDefault(); // Previne o comportamento padrão do formulário que é recarregar a página.
 
-    if (!validateInput()) return; // Se a função validateInput retornar false, ou seja não foi digitado nada no input, não executa o bloco de código abaixo.
+    if (validateInput()) return; // Se a função validateInput retornar true, ou seja, se o input for inválido, continua o código abaixo.
 
     dispatch(fetchPostTask(inputValue)); // O dispatch executa a função fetchPostTask que é responsável por fazer a requisição POST para a API, que cadastra a tarefa no banco de dados, passando o inputValue como parâmetro.
 
