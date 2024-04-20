@@ -1,5 +1,5 @@
-const local = "http://localhost:3001";
-const server = "https://todo-list-api-to2m.onrender.com";
+// const local = "http://localhost:3001";
+const server = "https://todo-list-api-6u0s.onrender.com";
 
 // A função GET_TASKS é responsável por fazer a requisição GET para a API, que retorna todas as tarefas cadastradas no banco de dados.
 export const GET_TASKS = () => {
