@@ -1,9 +1,12 @@
+const local = "http://localhost:3001";
+const server = "https://todo-list-api-to2m.onrender.com";
+
 // A função GET_TASKS é responsável por fazer a requisição GET para a API, que retorna todas as tarefas cadastradas no banco de dados.
 export const GET_TASKS = () => {
   // Retorna um objeto com a URL e as opções da requisição.
   return {
     // O url é a URL da API que será acessada.
-    url: "http://localhost:3001/tasks",
+    url: `${server}/tasks`,
     // O options é um objeto que contém as opções da requisição.
     options: {
       // O method é o método da requisição.
@@ -22,7 +25,7 @@ export const POST_TASK = (title) => {
   // Retorna um objeto com a URL e as opções da requisição.
   return {
     // O url é a URL da API que será acessada.
-    url: "http://localhost:3001/tasks",
+    url: `${server}/tasks`,
     // O options é um objeto que contém as opções da requisição.
     options: {
       // O method é o método da requisição.
@@ -41,7 +44,7 @@ export const POST_TASK = (title) => {
 export const DELETE_TASK = (id) => {
   return {
     // O url é a URL da API que será acessada.
-    url: `http://localhost:3001/tasks/${id}`,
+    url: `${server}/${id}`,
     // O options é um objeto que contém as opções da requisição.
     options: {
       // O method é o método da requisição.
@@ -55,10 +58,10 @@ export const DELETE_TASK = (id) => {
 };
 
 // A função PUT_TASK é responsável por fazer a requisição PUT para a API, que atualiza o título de uma tarefa no banco de dados.
-export const PUT_TASK = ({id, title, status}) => {
+export const PUT_TASK = ({ id, title, status }) => {
   return {
     // O url é a URL da API que será acessada.
-    url: `http://localhost:3001/tasks/${id}`,
+    url: `${server}/${id}`,
     // O options é um objeto que contém as opções da requisição.
     options: {
       // O method é o método da requisição.

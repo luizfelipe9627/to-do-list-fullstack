@@ -23,9 +23,6 @@
           },
           "status": {
             "type": "string"
-          },
-          "created_at": {
-            "type": "string"
           }
         },
         "xml": {
@@ -42,6 +39,10 @@
     {
       "url": "http://localhost:3001",
       "description": "Servidor local (HTTP)"
+    },
+    {
+      "url": "https://todo-list-api-to2m.onrender.com",
+      "description": "Servidor remoto (HTTPS)"
     }
   ],
   "tags": [

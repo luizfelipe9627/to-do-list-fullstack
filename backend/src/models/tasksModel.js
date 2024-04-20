@@ -15,12 +15,12 @@ const createTask = async (task) => {
 
   const dateUTC = new Date(Date.now()).toUTCString(); // Cria uma constante chamada dateUTC que recebe a data atual em formato UTC. O new Date(Date.now()) cria um novo objeto Date com a data atual e o toUTCString() converte a data para o formato UTC.
 
-  const query = "INSERT INTO tasks(title, status, created_at) VALUES(?, ?, ?)"; // Cria uma query de inserção de uma nova tarefa no banco de dados. O INSERT INTO é utilizado para inserir dados em uma tabela no caso o tasks, que recebe as chaves title, status e created_at. Os valores são passados como ?, pois serão substituídos pelos valores reais na execução da query.
+  const query = "INSERT INTO tasks(title, status) VALUES(?, ?)"; // Cria uma query de inserção de uma nova tarefa no banco de dados. O INSERT INTO é utilizado para inserir dados em uma tabela no caso o tasks, que recebe as chaves title e status. Os valores são passados como ?, pois serão substituídos pelos valores reais na execução da query.
 
-  // Chama o método execute da conexão com o banco de dados, passando a query que insere uma nova tarefa, substituindo os ? pelo título da tarefa, o status por padrão é pendente e o created_at é a data de criação da tarefa. O await tem que ser utilizado para que a função espere a execução da query e só depois retorne o resultado.
+  // Chama o método execute da conexão com o banco de dados, passando a query que insere uma nova tarefa, substituindo os ? pelo título da tarefa, o status por padrão é pendente. O await tem que ser utilizado para que a função espere a execução da query e só depois retorne o resultado.
   await connection.execute(
     query, // Executa a query de inserção de uma nova tarefa no banco de dados.
-    [title, "pendente", dateUTC], // Passa os valores que substituirão os ? na query. O title é o título da tarefa, o status por padrão é pendente e o created_at é a data de criação da tarefa.
+    [title, "pendente", dateUTC], // Passa os valores que substituirão os ? na query. O title é o título da tarefa, o status por padrão é pendente.
   );
 };
 

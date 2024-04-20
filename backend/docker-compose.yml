@@ -1,14 +1,3 @@
-# O networks é responsável por definir a rede que será utilizada pelos containers.
-networks:
-  # Cria uma rede chamada mynetwork.
-  mynetwork:
-    # O ipam é responsável por definir o ip e gateway da rede.
-    ipam:
-      # O config é a configuração da rede.
-      config:
-        - subnet: 172.25.0.0/16 # Define o ip da rede, depois do / é a quantidade de bits que será utilizada para definir o ip.
-          gateway: 172.25.0.1 # Define o gateway da rede.
-
 # O services é um array de serviços que serão executados nos containers do docker.
 services:
   # O serviço app(pode ser qualquer outro nome) é um serviço que será executado no container do node.
@@ -26,12 +15,6 @@ services:
     # Define o volume, responsável por mapear a pasta do projeto para o container.
     volumes:
       - .:/usr/app
-    # O depends_on é responsável por definir a ordem de inicialização dos containers, nesse caso o container app só será iniciado após o container db.
-    depends_on:
-      - db
-    # O networks é responsável por definir a rede que o container irá utilizar.
-    networks:
-      - mynetwork
 
   # O serviço db(pode ser qualquer outro nome) é um serviço que será executado no container do mysql.
   db:
@@ -39,18 +22,12 @@ services:
     image: mysql
     # O environment é responsável por definir as variáveis de ambiente.
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_USER: $MYSQL_USER
+      MYSQL_PASSWORD: $MYSQL_PASSWORD
     # O ports é responsável por definir as portas que serão expostas para a máquina host.
     ports:
       - "3306:3306"
     # Define o volume, responsável por mapear/criar a pasta do banco de dados para o container.
     volumes:
       - ./src/database/data:/var/lib/mysql
-      - ./src/database/init.sql:/docker-entrypoint-initdb.d/init.sql
-    # O networks é responsável por definir a rede que o container irá utilizar.
-    networks:
-      # Chama a rede mynetwork criada acima para ser utilizada.
-      mynetwork:
-        # O ipv4_address é responsável por definir o ip do container.
-        ipv4_address: 172.25.0.2 
-            
+      - ./src/database/schema.sql:/docker-entrypoint-initdb.d/schema.sql

@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon --legacy-watch src/server.js",
+    "docker:app": "docker-compose up -d app",
+    "docker:db": "docker-compose up -d db",
+    "docker:db:schema": "docker-compose exec -T db mysql -uroot -proot < src/database/schema.sql",
     "docker:start": "docker-compose up -d",
     "docker:stop": "docker-compose down",
     "docker:logs": "docker-compose logs -f",
