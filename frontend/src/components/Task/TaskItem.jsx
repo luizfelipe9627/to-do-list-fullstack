@@ -35,6 +35,7 @@ const TaskItem = ({ id, title, deleteTask, status }) => {
     return inputValue.trim() === "" ? setError(true) : setError(false); // Se o valor do estado value for uma string vazia, altera o estado error para true, se não altera para false.
   };
 
+  // Função chamada updateTask que não recebe parâmetros, responsável por atualizar a tarefa.
   const updateTask = () => {
     setIsChecked(!isChecked); // Altera o estado isChecked para o valor contrário do estado atual, ou seja, se for true, passa a ser false e vice-versa.
 

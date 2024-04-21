@@ -2,18 +2,20 @@
 
 <div display="flex">
   <img src="https://img.shields.io/static/v1?label=react&message=18.2.0&color=61DAFB&style=for-the-badge&logo=react"/>
-   <img src="https://img.shields.io/static/v1?label=redux&nbsp;toolkit&message=2.2.3&color=764ABC&style=for-the-badge&logo=redux" alt="Redux">
+  <img src="https://img.shields.io/static/v1?label=redux&nbsp;toolkit&message=2.2.3&color=764ABC&style=for-the-badge&logo=redux" alt="Redux">
   <img src="https://img.shields.io/static/v1?label=tailwindcss&message=3.4.3&color=38B2AC&style=for-the-badge&logo=tailwind-css" alt="Tailwind CSS">
-   <img src="https://img.shields.io/static/v1?label=eslint&message=8.57.0&color=4B32C3&style=for-the-badge&logo=eslint" alt="ESLint">
+  <img src="https://img.shields.io/static/v1?label=eslint&message=8.57.0&color=4B32C3&style=for-the-badge&logo=eslint" alt="ESLint">
   <img src="https://img.shields.io/static/v1?label=vite&message=5.2.0&color=FFA500&style=for-the-badge&logo=vite" alt="Vite">
+  <img src="https://img.shields.io/static/v1?label=autoprefixer&message=10.4.19&color=8B4513&style=for-the-badge&logo=postcss" alt="Autoprefixer">
+  <img src="https://img.shields.io/static/v1?label=postcss&message=8.4.38&color=DD3A0A&style=for-the-badge&logo=postcss" alt="PostCSS">
   <img src="https://img.shields.io/static/v1?label=node&message=18-alpine&color=green&style=for-the-badge&logo=node.js"/> 
   <img src="https://img.shields.io/static/v1?label=express&message=4.19.2&color=yellow&style=for-the-badge&logo=express"/> 
   <img src="https://img.shields.io/static/v1?label=mysql2&message=3.9.4&color=4479A1&style=for-the-badge&logo=mysql" alt="mysql2">
   <img src="https://img.shields.io/static/v1?label=swagger&message=5.0.0&color=darkgreen&style=for-the-badge&logo=swagger"/>
-   <img src="https://img.shields.io/static/v1?label=docker&message=4.29.0&color=2496ED&style=for-the-badge&logo=docker" alt="Docker">
+  <img src="https://img.shields.io/static/v1?label=docker&message=4.29.0&color=2496ED&style=for-the-badge&logo=docker" alt="Docker">
 </div>
 
-<img src="./assets/swagger.png" alt="Apresentação" width="100%"/>
+<img src="./assets/todo-list.gif" alt="Apresentação" width="100%"/>
 
 Bem-vindo ao meu repositório de To Do List, meu primeiro projeto FullStack de uma lista de tarefas. Criei este projeto com o intuito de aprender mais sobre desenvolvimento FullStack, utilizando as tecnologias mais populares do mercado.
 
@@ -28,10 +30,10 @@ Bem-vindo ao meu repositório de To Do List, meu primeiro projeto FullStack de u
 
 Este projeto foi desenvolvido com o intuito de aprender mais sobre desenvolvimento FullStack, utilizando as tecnologias mais populares do mercado.
 
-# Hospedagem
+# Deploy
 
 O frontend do projeto foi hospedado no Netlify e pode ser acessado aqui: [To Do List](https://todo-list-fullstack.netlify.app/)
-O backend do projeto foi hospedado no Heroku e pode ser acessado aqui: [To Do List API](https://todo-list-fullstack-api.herokuapp.com/)
+O backend do projeto foi hospedado no Render e pode ser acessado aqui: [To Do List API](https://todo-list-api-6u0s.onrender.com/)
 
 # Funcionalidades
 

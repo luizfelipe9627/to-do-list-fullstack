@@ -1,8 +1,5 @@
-// Importa as bibliotecas.
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-
-// Importa os componentes.
 import CreateButton from "../Button/CreateButton";
 import Input from "../Input/Input";
 import Empty from "../Empty";
@@ -10,17 +7,17 @@ import TaskItem from "./TaskItem";
 import Status from "../Status";
 import Error from "../../helper/Error";
 import Loading from "../../helper/Loading";
-
-// Importa as actions do redux.
 import { fetchGetTasks } from "../../store/getTasks";
 import { fetchPostTask } from "../../store/postTask";
-import { fetchDeleteTask } from "../../store/deleteTask";
 import Pagination from "../Pagination";
+import { useModal } from "../../context/ModalContext";
 
 const Tasks = () => {
   const [inputValue, setInputValue] = React.useState(""); // Criado um estado chamada inputValue e a função setInputValue que altera o estado task. Sendo o valor inicial uma string vazia.
   const [error, setError] = React.useState(false); // Criado um estado chamada error e a função setError que altera o estado error. Sendo o valor inicial false.
   const [currentPage, setCurrentPage] = React.useState(1); // Criado um estado chamado currentPage e uma função atualizadora chamada setCurrentPage. O estado currentPage começa com o valor 1.
+
+  const { setIsOpenModal, setTaskIdToDelete } = useModal(); // Está desestruturando o useModal que é responsável por acessar o estado global da aplicação, e pegando as funções atualizadoras setIsOpenModal e setTaskIdToDelete.
 
   const dispatch = useDispatch(); // Está executando o hook useDispatch que é responsável por acessar o dispatch da store que dispara as ações, e armazena na constante dispatch.
 
@@ -87,10 +84,8 @@ const Tasks = () => {
 
   // Função chamada deleteTask que recebe o id como parâmetro, responsável por deletar uma tarefa.
   const deleteTask = (id) => {
-    // Se o usuário confirmar a exclusão da tarefa, executa o if.
-    if (window.confirm("Deseja realmente deletar essa tarefa?")) {
-      dispatch(fetchDeleteTask(id)); // O dispatch executa a função fetchDeleteTask que é responsável por fazer a requisição DELETE para a API, que deleta a tarefa no banco de dados, passando o id como parâmetro.
-    }
+    setTaskIdToDelete(id); // Altera o estado taskIdToDelete para o id da tarefa que será deletada.
+    setIsOpenModal(true); // Abre o modal de confirmação.
   };
 
   return (

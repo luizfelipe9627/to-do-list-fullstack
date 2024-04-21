@@ -26,23 +26,34 @@ export default {
       "blue-dark": "#1E6F9F",
       "danger": "#E25858",
       "success": "#4CAF50",
+      "transparent": "rgba(0, 0, 0, 0.5)",
     },
     extend: {
-      keyframes: {
-        rocket: {
-          "0%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
-          "100%": { transform: "translateY(0)" },
-        },
-        "rocket-fire": {
-          "0%": { transform: "scaleY(1)" },
-          "50%": { transform: "scaleY(1.2)" },
-          "100%": { transform: "scaleY(1)" },
-        },
-      },
       animation: {
-        rocket: "rocket 1s infinite",
-        "rocket-fire": "rocket-fire 1s infinite",
+        bottom: "animate-bottom 1.2s forwards",
+        top: "animate-top 1.2s forwards",
+      },
+      keyframes: {
+        "animate-bottom": {
+          "0%": {
+            transform: "translateY(-200%)",
+            opacity: 0,
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: 1,
+          },
+        },
+        "animate-top": {
+          "0%": {
+            transform: "translateY(0)",
+            opacity: 1,
+          },
+          "100%": {
+            transform: "translateY(-200%)",
+            opacity: 0,
+          },
+        },
       },
     },
   },
