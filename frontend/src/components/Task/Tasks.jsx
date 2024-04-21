@@ -9,6 +9,7 @@ import Empty from "../Empty";
 import TaskItem from "./TaskItem";
 import Status from "../Status";
 import Error from "../../helper/Error";
+import Loading from "../../helper/Loading";
 
 // Importa as actions do redux.
 import { fetchGetTasks } from "../../store/getTasks";
@@ -161,8 +162,8 @@ const Tasks = () => {
         {/* Se existir erro no estado errorGetTasks, exibe a mensagem. */}
         {errorGetTasks && <Error error={errorGetTasks} />}
 
-        {/* Se o loading for true, ou seja a requisição está em andamento, exibe a mensagem. */}
-        {loading && <p>Carregando...</p>}
+        {/* Se o loading for true, ou seja a requisição está em andamento, renderiza o componente Loading. */}
+        {loading && <Loading />}
       </div>
     </section>
   );

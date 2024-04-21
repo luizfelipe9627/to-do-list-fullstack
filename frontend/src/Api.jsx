@@ -1,12 +1,18 @@
-// const local = "http://localhost:3001";
-const server = "https://todo-list-api-6u0s.onrender.com";
+let server = ""; // Variável que armazena a URL da API.
+
+// Se o ambiente de execução for o de desenvolvimento, a variável server recebe a URL da API de desenvolvimento.
+if (import.meta.env.MODE === "development") {
+  server = "http://localhost:3001/tasks"; // URL da API de desenvolvimento local.
+} else {
+  server = "https://todo-list-api-6u0s.onrender.com/tasks"; // URL da API hospedada no Render.
+}
 
 // A função GET_TASKS é responsável por fazer a requisição GET para a API, que retorna todas as tarefas cadastradas no banco de dados.
 export const GET_TASKS = () => {
   // Retorna um objeto com a URL e as opções da requisição.
   return {
     // O url é a URL da API que será acessada.
-    url: `${server}/tasks`,
+    url: `${server}`,
     // O options é um objeto que contém as opções da requisição.
     options: {
       // O method é o método da requisição.
@@ -25,7 +31,7 @@ export const POST_TASK = (title) => {
   // Retorna um objeto com a URL e as opções da requisição.
   return {
     // O url é a URL da API que será acessada.
-    url: `${server}/tasks`,
+    url: `${server}`,
     // O options é um objeto que contém as opções da requisição.
     options: {
       // O method é o método da requisição.

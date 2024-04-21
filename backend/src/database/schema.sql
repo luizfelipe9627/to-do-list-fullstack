@@ -11,5 +11,5 @@ DROP TABLE IF EXISTS tasks;
 CREATE TABLE tasks (
     id INT PRIMARY KEY AUTO_INCREMENT, # Define o id um valor inteiro que como uma chave primária(o id é único para cada linha) e o AUTO_INCREMENT é para que o MySQL gere automaticamente um novo valor para o id sempre que uma nova linha for inserida.
     title VARCHAR(1000) NOT NULL, # Define o title como uma string de até 45 caracteres e não pode ser nulo.
-    status VARCHAR(45) NOT NULL, # Define o status como uma string de até 45 caracteres e não pode ser nulo.
+    status VARCHAR(45) NOT NULL # Define o status como uma string de até 45 caracteres e não pode ser nulo.
 );

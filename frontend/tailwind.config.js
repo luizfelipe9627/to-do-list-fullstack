@@ -27,7 +27,24 @@ export default {
       "danger": "#E25858",
       "success": "#4CAF50",
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        rocket: {
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        "rocket-fire": {
+          "0%": { transform: "scaleY(1)" },
+          "50%": { transform: "scaleY(1.2)" },
+          "100%": { transform: "scaleY(1)" },
+        },
+      },
+      animation: {
+        rocket: "rocket 1s infinite",
+        "rocket-fire": "rocket-fire 1s infinite",
+      },
+    },
   },
   plugins: [],
 };
