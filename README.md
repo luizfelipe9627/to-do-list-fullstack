@@ -32,7 +32,7 @@ Este projeto foi desenvolvido com o intuito de aprender mais sobre desenvolvimen
 
 # Deploy
 
-O frontend do projeto foi hospedado no Netlify e pode ser acessado aqui: [To Do List](https://todo-list-fullstack.netlify.app/)
+O frontend do projeto foi hospedado no Netlify e pode ser acessado aqui: [To Do List](https://luizfelipe9627-todo-list.netlify.app)
 O backend do projeto foi hospedado no Render e pode ser acessado aqui: [To Do List API](https://todo-list-api-6u0s.onrender.com/)
 
 # Funcionalidades
