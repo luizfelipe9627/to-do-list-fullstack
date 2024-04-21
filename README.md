@@ -2,7 +2,7 @@
 
 <div display="flex">
   <img src="https://img.shields.io/static/v1?label=react&message=18.2.0&color=61DAFB&style=for-the-badge&logo=react"/>
-  <img src="https://img.shields.io/static/v1?label=redux&nbsp;toolkit&message=2.2.3&color=764ABC&style=for-the-badge&logo=redux" alt="Redux">
+  <img src="https://img.shields.io/static/v1?label=redux toolkit&message=2.2.3&color=764ABC&style=for-the-badge&logo=redux" alt="Redux">
   <img src="https://img.shields.io/static/v1?label=tailwindcss&message=3.4.3&color=38B2AC&style=for-the-badge&logo=tailwind-css" alt="Tailwind CSS">
   <img src="https://img.shields.io/static/v1?label=eslint&message=8.57.0&color=4B32C3&style=for-the-badge&logo=eslint" alt="ESLint">
   <img src="https://img.shields.io/static/v1?label=vite&message=5.2.0&color=FFA500&style=for-the-badge&logo=vite" alt="Vite">
