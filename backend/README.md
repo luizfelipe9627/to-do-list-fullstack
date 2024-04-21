@@ -1,4 +1,4 @@
-# Backend da ToDo List API
+# Backend da To Do List API
 
 <div display="flex">
  <img src="https://img.shields.io/static/v1?label=node&message=18-alpine&color=green&style=for-the-badge&logo=node.js"/> 
@@ -29,7 +29,7 @@
 
 ## Introdução
 
-Bem-vindo à documentação da ToDo List API! Esta documentação fornece informações detalhadas sobre como usar a API, incluindo endpoints disponíveis, parâmetros aceitos, códigos de status e exemplos práticos. A documentação Swagger está disponível para uma visão mais interativa da API.
+Bem-vindo à documentação da To Do List API! Esta documentação fornece informações detalhadas sobre como usar a API, incluindo endpoints disponíveis, parâmetros aceitos, códigos de status e exemplos práticos. A documentação Swagger está disponível para uma visão mais interativa da API.
 
 ## Instalação e execução
 #### Para instalar e executar o projeto, siga os passos abaixo:
@@ -38,14 +38,14 @@ Bem-vindo à documentação da ToDo List API! Esta documentação fornece inform
 - Abra o terminal e execute o comando abaixo para clonar o repositório:
 
   ```bash
-    git clone https://github.com/luizfelipe9627/todo-list-fullstack.git
+    git clone https://github.com/luizfelipe9627/to-do-list-fullstack.git
   ```
 
 2. Acesse a pasta do projeto:
 - Navegue até a pasta do projeto com o comando abaixo:
 
   ```bash
-    cd todo-list-fullstack/backend
+    cd to-do-list-fullstack/backend
   ```
 
 3. Defina as variáveis de ambiente:
