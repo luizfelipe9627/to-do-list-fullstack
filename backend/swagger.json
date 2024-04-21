@@ -37,7 +37,7 @@
   },
   "servers": [
     {
-      "url": "https://to-do-list-api-6u0s.onrender.com",
+      "url": "https://to-do-list-api-1bs7.onrender.com",
       "description": "Servidor remoto (HTTPS)"
     },
     {

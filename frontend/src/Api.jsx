@@ -3,7 +3,7 @@ let server = ""; // Variável que armazena a URL da API.
 if (import.meta.env.VITE_REACT_ENV === "development") {
   server = "http://localhost:3001/tasks"; // URL da API de desenvolvimento local.
 } else {
-  server = "https://todo-list-api-6u0s.onrender.com/tasks"; // URL da API hospedada no Render.
+  server = "https://to-do-list-api-1bs7.onrender.com/tasks"; // URL da API hospedada no Render.
 }
 
 // A função GET_TASKS é responsável por fazer a requisição GET para a API, que retorna todas as tarefas cadastradas no banco de dados.
