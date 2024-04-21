@@ -105,6 +105,7 @@ const Tasks = () => {
           placeholder="Adicione uma nova tarefa"
           // Passa o estado error para o componente Input.
           error={error}
+          required
         />
         <CreateButton />
       </form>

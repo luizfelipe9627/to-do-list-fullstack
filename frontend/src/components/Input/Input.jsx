@@ -7,6 +7,7 @@ const Input = ({
   error,
   placeholder,
   className,
+  ...props
 }) => {
   return (
     // Cria um input com o type e name recebidos como props.
@@ -24,6 +25,7 @@ const Input = ({
       placeholder={placeholder}
       // Quando houver uma alteração no input, a função onChange responsável por atualizar o estado value será chamada.
       onChange={onChange}
+      {...props}
     />
   );
 };

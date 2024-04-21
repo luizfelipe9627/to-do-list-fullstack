@@ -1,7 +1,6 @@
 let server = ""; // Variável que armazena a URL da API.
-
 // Se o ambiente de execução for o de desenvolvimento, a variável server recebe a URL da API de desenvolvimento.
-if (import.meta.env.MODE === "development") {
+if (import.meta.env.VITE_REACT_ENV === "development") {
   server = "http://localhost:3001/tasks"; // URL da API de desenvolvimento local.
 } else {
   server = "https://todo-list-api-6u0s.onrender.com/tasks"; // URL da API hospedada no Render.
