@@ -1,4 +1,4 @@
-# Frontend da aplicação To-Do List
+# Frontend da aplicação To Do List
 
 <div display="flex">
   <img src="https://img.shields.io/static/v1?label=react&message=18.2.0&color=61DAFB&style=for-the-badge&logo=react"/>
@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/static/v1?label=postcss&message=8.4.38&color=DD3A0A&style=for-the-badge&logo=postcss" alt="PostCSS">
 </div>
 
-<img src="./src/assets/img/todo.png" alt="Apresentação do ToDo" width="100%"/>
+<img src="./src/assets/img/todo.png" alt="Apresentação do To Do List" width="100%"/>
 
 
 ## Sumário
@@ -25,7 +25,7 @@
 
 ## Introdução
 
-To-Do List é uma aplicação web que permite ao usuário criar, editar e excluir tarefas. O projeto foi desenvolvido com React, Redux e TypeScript, e utiliza a [API](https://todo-list-api-6u0s.onrender.com) hospedada, que foi criada na pasta `backend` para realizar as operações de CRUD.
+To-Do List é uma aplicação web que permite ao usuário criar, editar e excluir tarefas. O projeto foi desenvolvido com React, Redux e TypeScript, e utiliza a [API](https://to-do-list-api-6u0s.onrender.com) hospedada, que foi criada na pasta `backend` para realizar as operações de CRUD.
 
 ## Instalação e execução
 #### Para instalar e executar o projeto, siga os passos abaixo:
@@ -34,14 +34,14 @@ To-Do List é uma aplicação web que permite ao usuário criar, editar e exclui
 - Abra o terminal e execute o comando abaixo para clonar o repositório:
 
   ```bash
-    git clone https://github.com/luizfelipe9627/todo-list-fullstack.git
+    git clone https://github.com/luizfelipe9627/to-do-list-fullstack.git
   ```
 
 2. Acesse a pasta do projeto
 - Navegue até a pasta do projeto com o comando abaixo:
 
   ```bash
-    cd todo-list-fullstack/frontend
+    cd to-do-list-fullstack/frontend
   ```
 
 3. Instale o Docker

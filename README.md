@@ -33,7 +33,7 @@ Bem-vindo ao meu repositório de To Do List, meu primeiro projeto FullStack de u
 # Deploy
 
 - O frontend do projeto foi hospedado no Netlify e pode ser acessado aqui: [To Do List](https://luizfelipe9627-to-do-list-fullstack.netlify.app)
-- O backend do projeto foi hospedado no Render e pode ser acessado aqui: [To Do List API](https://to-do-list-api-6u0s.onrender.com/)
+- O backend do projeto foi hospedado no Render e pode ser acessado aqui: [To Do List API](https://to-do-list-api-1bs7.onrender.com)
 
 # Funcionalidades
 
