@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "ToDo List API",
+    "title": "To Do List API",
     "version": "1.0.0",
     "description": "API para gerenciamento de lista de afazeres, utilizando Node.js, Express e MySQL.",
     "termsOfService": "http://swagger.io/terms/",
@@ -37,12 +37,12 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3001",
-      "description": "Servidor local (HTTP)"
+      "url": "https://to-do-list-api-6u0s.onrender.com",
+      "description": "Servidor remoto (HTTPS)"
     },
     {
-      "url": "https://todo-list-api-6u0s.onrender.com",
-      "description": "Servidor remoto (HTTPS)"
+      "url": "http://localhost:3001",
+      "description": "Servidor local (HTTP)"
     }
   ],
   "tags": [
