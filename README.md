@@ -28,12 +28,12 @@ Bem-vindo ao meu repositório de To Do List, meu primeiro projeto FullStack de u
 
 # Sobre o projeto
 
-Este projeto foi desenvolvido com o intuito de aprender mais sobre desenvolvimento FullStack, utilizando as tecnologias mais populares do mercado.
+- Este projeto foi desenvolvido com o intuito de aprender mais sobre desenvolvimento FullStack, utilizando as tecnologias mais populares do mercado.
 
 # Deploy
 
-O frontend do projeto foi hospedado no Netlify e pode ser acessado aqui: [To Do List](https://luizfelipe9627-todo-list.netlify.app)
-O backend do projeto foi hospedado no Render e pode ser acessado aqui: [To Do List API](https://todo-list-api-6u0s.onrender.com/)
+- O frontend do projeto foi hospedado no Netlify e pode ser acessado aqui: [To Do List](https://luizfelipe9627-todo-list.netlify.app)
+- O backend do projeto foi hospedado no Render e pode ser acessado aqui: [To Do List API](https://todo-list-api-6u0s.onrender.com/)
 
 # Funcionalidades
 
