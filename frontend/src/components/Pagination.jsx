@@ -64,7 +64,7 @@ const Pagination = ({
             onClick={() => setCurrentPage(number)}
             // Se o currentPage for igual ao number, então o botão terá a classe active, senão, não terá.
 
-            className={`w-10 h-10 text-[16px] leading-140 rounded-md text-gray-100 bg-gray-400 transition-colors duration-200 ease-in-out ${
+            className={`w-10 h-10 text-[1rem] leading-140 rounded-md text-gray-100 bg-gray-400 transition-colors duration-200 ease-in-out ${
               currentPage === number
                 ? "bg-gray-500"
                 : "hover:bg-gray-500 text-gray-300"

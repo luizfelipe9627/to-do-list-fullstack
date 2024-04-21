@@ -48,7 +48,7 @@ const Modal = () => {
         // Ao clicar no modal(o filho), ele pega o evento e não deixa o pai ser clicado, o stopPropagation impede que o evento seja propagado(ou seja, que suba para o pai) e o modal não fecha.
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="text-gray-100 p-1 md:max-w-[450px]">
+        <div className="text-gray-100 p-1 md:max-w-[28.125rem]">
           <h1 className="text-2xl font-bold">Janela de confirmação</h1>
 
           <p className="my-4">

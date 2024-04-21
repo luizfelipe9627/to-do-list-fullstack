@@ -11,7 +11,7 @@ const Checkbox = ({ id, isChecked, onChange }) => {
         type="checkbox"
         name={`checkbox-${id}`}
         id={`checkbox-${id}`}
-        className="relative appearance-none rounded-full w-[18px] h-[18px] border-2 border-blue checked:bg-purple-dark checked:border-purple-dark cursor-pointer pointer-events-auto hover:border-blue-dark hover:bg-blue-dark hover:bg-opacity-40 hover:checked:bg-purple hover:checked:border-purple focus:outline-none transition-colors duration-200 ease-in-out"
+        className="relative appearance-none rounded-full w-[1.125rem] h-[1.125rem] border-2 border-blue checked:bg-purple-dark checked:border-purple-dark cursor-pointer pointer-events-auto hover:border-blue-dark hover:bg-blue-dark hover:bg-opacity-40 hover:checked:bg-purple hover:checked:border-purple focus:outline-none transition-colors duration-200 ease-in-out"
         // Se isChecked for true, o checkbox estará marcado, senão, não estará marcado.
         checked={isChecked}
         // Quando o checkbox for clicado, executa a função onChange.

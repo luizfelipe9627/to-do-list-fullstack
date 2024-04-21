@@ -1,7 +1,7 @@
 const EditButton = ({ onClick, isClose }) => {
   return (
     <button
-      className={`ml-auto hover:bg-gray-400 p-[6px] stroke-gray-300 fill-gray-300 rounded-[4px] ${
+      className={`ml-auto hover:bg-gray-400 p-[0.375rem] stroke-gray-300 fill-gray-300 rounded-[0.25rem] ${
         isClose
           ? "hover:fill-danger hover:stroke-danger"
           : "hover:fill-success hover:stroke-success"

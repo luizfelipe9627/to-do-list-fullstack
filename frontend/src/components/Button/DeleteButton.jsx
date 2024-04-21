@@ -1,7 +1,7 @@
 const DeleteButton = ({ onClick }) => {
   return (
     <button
-      className="ml-auto hover:bg-gray-400 p-[6px] fill-gray-300 hover:fill-danger rounded-[4px]"
+      className="ml-auto hover:bg-gray-400 p-[0.375rem] fill-gray-300 hover:fill-danger rounded-[0.25rem]"
       // Ao clicar no botão, executa a função onClick passada como propriedade.
       onClick={onClick}
     >
